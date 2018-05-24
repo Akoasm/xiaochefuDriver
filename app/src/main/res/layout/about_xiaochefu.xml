@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/guanyu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/icon_black" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关于小车夫"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="小车夫代驾APP"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="     小车夫代驾—任我行集团旗下最安全、便捷、实惠的代驾APP平台
+小车夫代驾带给您的不只是代驾，是一种服务，一种品质，是一种改变您的生活的方式。
+成都各大保险公司争相选择的代驾平台。
+小车夫代驾特点：
+速度：快速精准定位，让您一秒下单，司机快速响应，及时到达，为您提供高效、优质的代驾服务。
+安全：任我行的司机由任我行集团精心挑选，定期培训，五年以上的驾龄，给您提供最安全、最能信赖的代驾服务。
+实惠：起步价，只需38元，最实惠的价格，带给您的是最有品质的服务。
+更多汽车服务关注：
+任我行集团官网：www.cdrwx.cn
+全国服务热线:400-800-4656
+任我行集团带给您爱车全方位的服务。"
+        android:textColor="#000"
+        android:textSize="13sp" />
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="top|center"-->
+    <!--android:text="技术支持：成都天峰世纪科技有限公司"-->
+    <!--android:textSize="12sp"-->
+    <!--/>-->
+
+</LinearLayout>

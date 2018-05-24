@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFAF5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/xq_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/icon_black" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="详情列表"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起步价"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/qibujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+        
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+       android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起步公里"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/qibugongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超出起步公里数"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/cc_qibugonglishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超出起步公里数费用"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/cc_qibugonglifeiyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无费用等待时间"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/dengdaishijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超出等待时间"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/cc_dengdaishijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超出等待时间费用"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/cc_dengdaishijianfeiyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="司机扣费率模式"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/sijikoulv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-  -"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffc928"
+            />
+
+    </LinearLayout>
+</LinearLayout>

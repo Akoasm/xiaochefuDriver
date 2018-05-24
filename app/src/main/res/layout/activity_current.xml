@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order.CurrentOrderActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="订单详情"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/activity_current_back"
+            android:src="@drawable/icon_black"
+            android:onClick="back"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#FBFAF5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qf.rwxchina.xiaochefudriver.Utils.CircleImageView
+            android:id="@+id/activity_current_img"
+            android:src="@drawable/icon_account"
+            android:padding="25dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+
+        <TextView
+            android:id="@+id/activity_current_name"
+            android:text="- -"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--司机数量-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_driver"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="司机数量:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_number"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--联系电话-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_tel"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="联系电话:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_phone"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--出发地-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_place"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="出发地:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_start"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--目的地-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_place"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="目的地:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_destination"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--预约时间-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_time"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="预约时间:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_time"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--客户来源-->
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/icon_customer"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="客户来源:"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_current_source"
+            android:text="- -"
+            android:textSize="13sp"
+            android:textColor="#353535"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+</LinearLayout>

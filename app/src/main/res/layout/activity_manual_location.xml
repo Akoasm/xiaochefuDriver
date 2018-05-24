@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/activity_come_back_title"
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="130dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/activity_manual_location_search"
+                android:hint="搜索"
+                android:background="@drawable/background_white"
+                android:paddingLeft="40dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/activity_manual_location_seaimg"
+                android:src="@drawable/icon_search"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activity_manual_location_back"
+            android:src="@drawable/icon_black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/activity_manual_location_baiduMap"
+        android:layout_below="@id/activity_come_back_title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/activity_manual_location_lin"
+        android:layout_below="@id/activity_manual_location_baiduMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/activity_manual_location_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/activity_manual_location_navigation"
+        android:src="@drawable/icon_navigation"
+        android:background="@color/colorWhite"
+        android:layout_above="@id/activity_manual_location_lin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,464 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.rwxchina.xiaochefu.fragment.CommonFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#E4E4E4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:text="普通代驾"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="#E4E4E4"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/background_block"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="时间段"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="起步价"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="（10公里以内）"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#E4E4E4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_common_time1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_common_t1"
+                        android:text="00:00-08:00"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/fragment_common_price1"
+                        android:text="￥30.00"
+                        android:textSize="15sp"
+                        android:textColor="#FFB941"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#E4E4E4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_common_time2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_common_t2"
+                        android:text="08:00-22:00"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/fragment_common_price2"
+                        android:text="￥30.00"
+                        android:textSize="15sp"
+                        android:textColor="#FFB941"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#E4E4E4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_common_time3"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_common_t3"
+                        android:text="22:00-08:00"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/fragment_common_price3"
+                        android:text="￥50.00"
+                        android:textSize="15sp"
+                        android:textColor="#FFB941"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="计费说明:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fragment_common_jifei"
+                android:text="超出起步公里数，每5公里加收20元，不足5公里按5公里计算。\n计费时间以司机开始代驾时间计算。"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="等待费:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fragment_common_wait"
+                android:text="前30分钟免费，超过30分钟后每30分钟加收等待费20元，不足30分钟按30分钟计算。"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#E4E4E4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"></LinearLayout>
+
+            <TextView
+                android:text="长途代驾"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="#E4E4E4"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@drawable/background_block"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="08:00-次日08:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/fragment_common_price4"
+                            android:text="￥120.00"
+                            android:textSize="15sp"
+                            android:textColor="#FFB941"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="(含30公里)"
+                            android:textSize="11sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="超出后每公里加收20元"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:text="计费说明:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="不同时间段的代驾起步费用以实际出发时间为准。\n超出的公里数如不足10公里按10公里算。"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="等待费:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="等待时间每隔30分钟收费20元，不满30分钟不收费。"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="服务费:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="400人工调度等渠道下单会适当加收代驾服务费。"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="保险费:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="1元/单"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="其他费用:"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="高速费、过桥费、停车费等其他费用由用户承担"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

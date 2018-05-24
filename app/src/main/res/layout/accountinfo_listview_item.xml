@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+    >
+    <TextView
+        android:id="@+id/accountinfo_phone"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="电话:"
+        android:textSize="14sp"
+        android:paddingLeft="30dp"
+        android:textColor="#666666"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:background="#d1cccc"
+        android:layout_below="@id/accountinfo_phone">
+
+    </View>
+    <TextView
+        android:id="@+id/accountinfo_platform"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/accountinfo_phone"
+        android:text="平台:"
+        android:textSize="14sp"
+        android:paddingLeft="30dp"
+        android:textColor="#666666"
+        android:gravity="center_vertical"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/shape"
+        />
+</RelativeLayout>
+</LinearLayout>

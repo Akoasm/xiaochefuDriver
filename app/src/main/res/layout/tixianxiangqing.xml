@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入提现信息"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/tx_zhanghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:background="@drawable/background_gr"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/tx_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="收款人姓名"
+        android:textSize="20sp"
+        android:background="@drawable/background_gr"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/tx_yinhang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="开户行"
+        android:textSize="20sp"
+        android:background="@drawable/background_gr"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        />
+
+
+    <LinearLayout
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/tx_queren"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="确定"
+            android:background="@drawable/background_linear"
+            />
+
+        <Button
+            android:id="@+id/tx_quxiao"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="取消"
+            android:background="@drawable/background_linear"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

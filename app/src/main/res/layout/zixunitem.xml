@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/zx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冬季汽车蓄电池的保养维护"
+        android:textSize="30px"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        />
+
+    <ImageView
+        android:id="@+id/zx_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zx"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/zx_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="汽车上使用的蓄电池，目前主要有两种，一种是加电解液的铅酸蓄电池，一种是免维护性蓄电池。汽车蓄电池使用寿命"
+        android:textSize="26px"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#c0c0c0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/zx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚更新"
+            android:textSize="20px"
+            android:textColor="#00a3c0"
+
+            />
+        <TextView
+            android:id="@+id/zx_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来源51汽车"
+            android:textSize="20px"
+            android:textColor="#00a3c0"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

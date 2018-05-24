@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/pay_ok"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <ImageView
+        android:id="@+id/pay_ok_back"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/pay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="支付成功"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/pay_baoxian"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:background="#FCF8F5"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/pay_baoxiangongsi"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+            <!--<TextView-->
+                <!--android:text="订单号码："-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/pay_dingdanid"-->
+                <!--android:text="5269132136534543"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</LinearLayout>-->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#F9F9F9">
+
+        </View>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="订单时间："
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/pay_dingdantime"
+                android:text="2016-09-21  11:55:13"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#F9F9F9">
+
+        </View>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="支付金额："
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/pay_money"
+                android:text="￥1345.25"
+                android:textColor="@color/colorOrange"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pay_tu"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:background="#FCF8F5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:src="@mipmap/pay_ok"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

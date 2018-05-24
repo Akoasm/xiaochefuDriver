@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.rwxchina.xiaochefudriver.MapHome.AcceptOrderActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qf.rwxchina.xiaochefudriver.Utils.CircleImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="18568945268"
+            android:textSize="18sp"
+            android:textColor="@color/colorOrange"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="接单"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/background_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+
+            <Button
+                android:text="拒绝"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/background_gray"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

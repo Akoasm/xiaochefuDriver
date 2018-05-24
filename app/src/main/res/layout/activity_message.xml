@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="消息详情"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/activity_messge_back"
+            android:src="@drawable/icon_black"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/activity_messge_title"
+                android:text="干杯星期五，任性嗨，醉有解！"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_messge_date"
+                android:text="2016-08-05"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_messge_context"
+                android:text="周五酒局多
+酒后不仅送你安全到家
+还送99元果蔬汁饮料
+让你酒尽兴，醉无忧！
+周五叫代驾，99元卡普解酒饮料任性送！"
+                android:textSize="14sp"
+                android:textColor="#252525"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/activity_messge_img"
+                android:src="@drawable/img_info"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="活动时间"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_messge_time"
+                android:text="8月1日00:00-8月8日00:00"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="活动规则"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_messge_rule"
+                android:text="1、活动期间，仅限用户开启订单完成报单，成单后将在一周内收到果蔬汁优惠码短信，凭优惠码兑换解酒饮料；
+2、活动期间，美味用户仅限参与一次；"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

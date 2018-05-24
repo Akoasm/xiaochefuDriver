@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.rwxchina.xiaochefudriver.Return.ComeBackActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/activity_come_back_title"
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="结伴返程"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/activity_come_back_back"
+            android:src="@drawable/icon_black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_come_back_bommen"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/activity_come_back_add"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/activity_come_back_address"
+                android:text="正在定位.."
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:background="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_come_back_mude"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_come_back_tv_mude"
+                android:text="请输入你的目的地"
+                android:textSize="15sp"
+                android:background="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/activity_come_back_mapView"
+        android:layout_below="@id/activity_come_back_title"
+        android:layout_above="@id/activity_come_back_bommen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.baidu.mapapi.map.MapView>
+
+    <ImageView
+        android:id="@+id/activity_come_back_nacigation"
+        android:padding="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/activity_come_back_bommen"
+        android:src="@drawable/icon_navigation"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/activity_come_back_location"
+        android:src="@drawable/icon_search"
+        android:layout_above="@id/activity_come_back_nacigation"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

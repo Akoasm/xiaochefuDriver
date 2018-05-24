@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="#fff"
+    tools:context="com.qf.rwxchina.xiaochefudriver.Return.ReturnDialogActivity1">
+
+    <ImageView
+        android:id="@+id/activity_return_dialong1_cancel"
+        android:src="@drawable/icon_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qf.rwxchina.xiaochefudriver.Utils.CircleImageView
+            android:id="@+id/activity_return_dialong1_img"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/activity_return_dialong1_name"
+            android:text="余师傅"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/activity_return_dialong1_ratingBar"
+            style="@style/myRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:numStars="5"
+            android:progress="4"
+            android:stepSize="1"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="驾龄:"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_return_dialong1_year"
+                android:text="10年"
+                android:textSize="10sp"
+                android:textColor="@color/colorOrange"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="代驾:"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_return_dialong1_num"
+                android:text="248次"
+                android:textSize="10sp"
+                android:textColor="@color/colorOrange"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_return_dialong1_comeback"
+            android:text="结伴返程"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:background="@drawable/background_orange"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

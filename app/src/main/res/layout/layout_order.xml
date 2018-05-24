@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/start_ll"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="出发地:"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/layout_order_start"
+            android:text="四川省成都市武侯区剑南大道中段辅路"
+            android:background="@null"
+            android:textColor="@color/colorBlack"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="27dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#B4B4B4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_order_l_destination"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="目的地:"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/layout_order_destination"
+            android:hint="请输入目的地"
+            android:textColor="@color/colorBlack"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="27dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/icon_right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#B4B4B4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginBottom="3dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:text="需要司机:"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/layout_order_number"-->
+            <!--android:text="1名"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:background="#B4B4B4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"></LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_order_l_phone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="车牌号:"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/layout_order_phone"
+            android:textSize="15sp"
+            android:text="请输入车牌号"
+            android:background="@null"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="27dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#B4B4B4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/layout_order_sure"
+            android:text="确认订单"
+            android:background="@drawable/background_orange"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/layout_order_cancel"
+            android:text="取消订单"
+            android:background="@drawable/background_orange"
+            android:layout_marginLeft="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

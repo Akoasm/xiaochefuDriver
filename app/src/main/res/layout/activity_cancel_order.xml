@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.rwxchina.xiaochefudriver.Order.CancelOrderActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="订单详情"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/activity_cancel_order_back"-->
+            <!--android:src="@drawable/icon_black"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#FBFAF5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="89dp">
+
+        <com.qf.rwxchina.xiaochefudriver.Utils.CircleImageView
+            android:id="@+id/activity_cancel_order_img"
+            android:layout_marginLeft="42dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/activity_cancel_order_name"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <!--司机数量-->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="请选择取消原因"
+            android:textColor="#272727"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/activity_cancel_order_checkbox1"
+            style="@style/myCheckbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待时间太长"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/activity_cancel_order_checkbox2"
+            style="@style/myCheckbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="司机无法到达"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/activity_cancel_order_checkbox3"
+            style="@style/myCheckbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位不准确"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/activity_cancel_order_checkbox4"
+            style="@style/myCheckbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我呼叫错误"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/activity_cancel_order_checkbox5"
+            style="@style/myCheckbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他原因"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ECECEA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_cancel_order_other"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:background="#FBFAF5"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/activity_cancel_order_cancel"
+            android:text="确定取消"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/background_orange"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

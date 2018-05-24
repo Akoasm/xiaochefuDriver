@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/detil_money"
+            android:text="66"
+            android:textSize="35dp"
+
+
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:text="元"
+            android:layout_toRightOf="@id/detil_money"
+            android:layout_alignBottom="@id/detil_money"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/detil_tvdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+            android:text="15.6km"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/detil_tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:text="38分钟"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/detil_start"
+            android:layout_width="12dp"
+            android:layout_height="17dp" />
+        <TextView
+            android:id="@+id/detil_startaddress"
+            android:text="detil_startaddress"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:background="@color/colorhuishe"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/detil_end"
+            android:layout_width="12dp"
+            android:layout_height="17dp" />
+        <TextView
+            android:id="@+id/detil_endaddress"
+            android:text="detil_endaddress"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/detil_openll2"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detil_imgopen"
+            android:src="@drawable/detil_close"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="订单类型"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/detil_ordertype"-->
+            <!--android:text="订单类型"-->
+            <!--android:textSize="15dp"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="客户车牌"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="客户车牌"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="#2abdff"-->
+            <!--android:id="@+id/detil_platenumber"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="预约代驾"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="预约代价"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_createtime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="开始等待"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="预约代价"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_beginwait_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="开始代驾"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="开始等待"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_overwait_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="结束代驾"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="结束代驾"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_endtime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="里程费    "-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:text="里程费"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_distance"-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:text="等待费"-->
+            <!--android:textSize="15dp"-->
+            <!--android:id="@+id/detil_distancemoney"-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="等待费    "-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:id="@+id/detil_waittimeduan"-->
+
+            <!--android:text="等待费"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="等待费"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:id="@+id/detil_waitmoney"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="商户返利"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="- &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; &#45;&#45; -"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:textColor="@color/orange"-->
+            <!--android:text="商户返利"-->
+            <!--android:id="@+id/detil_fanli"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/detil_guize"-->
+        <!--android:textColor="#2abdff"-->
+        <!--android:text="收费规则"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp" />-->
+    <LinearLayout
+        android:id="@+id/detil_detil_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="订单类型"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_ordertype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="订单类型"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="客户车牌"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_platenumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="客户车牌"
+                android:textColor="#2abdff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="预约代驾"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_createtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="预约代价"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始等待"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_beginwait_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="预约代价"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始代驾"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_overwait_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="开始等待"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="结束代驾"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --" />
+
+            <TextView
+                android:id="@+id/detil_endtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="结束代驾"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="里程费    "
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/detil_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="里程费"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/detil_distancemoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:text="等待费"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="等待费    "
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/detil_waittimeduan"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="等待费"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/detil_waitmoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:text="等待费"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="商户返利"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:text="- -- -- -- --"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/detil_fanli"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="2"
+                android:text="商户返利"
+                android:textColor="@color/orange"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/detil_guize"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收费规则"
+            android:textColor="#2abdff"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</LinearLayout>

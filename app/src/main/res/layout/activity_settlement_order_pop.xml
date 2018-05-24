@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_s"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@mipmap/pop_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="88dp"
+                    android:layout_height="1dp"
+                    android:background="#ffae1f"
+                    >
+                </LinearLayout>
+                <TextView
+                    android:text="详情列表"
+                    android:textSize="18sp"
+                    android:textColor="#ffae1f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="88dp"
+                    android:layout_height="1dp"
+                    android:background="#ffae1f"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/activity_settlement_order_pop_money"
+                android:text="126元"
+                android:textSize="22sp"
+                android:textColor="#ffae1f"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/activity_settlement_order_start"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:text="起步价:" />
+                    <TextView
+                        android:id="@+id/activity_settlement_order_startmoney"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#cccccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/activity_settlement_order_kmprice"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公里费:" />
+                    <TextView
+                        android:id="@+id/activity_settlement_order_distancemoney"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#cccccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/activity_settlement_order_wait"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="等待费:" />
+                    <TextView
+                        android:id="@+id/activity_settlement_order_waitmoney"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#cccccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="1dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/close"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/pop_close"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
